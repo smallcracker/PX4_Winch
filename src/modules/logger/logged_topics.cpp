@@ -160,6 +160,10 @@ void LoggedTopics::add_default_topics()
 	add_optional_topic("fixed_wing_lateral_status", 100);
 	add_optional_topic("fixed_wing_runway_control", 100);
 
+	// winch related topics
+	add_topic("winch_control");
+	add_topic("winch_status");
+
 	// multi topics
 	add_optional_topic_multi("actuator_outputs", 100, 3);
 	add_optional_topic_multi("airspeed_wind", 1000, 4);
